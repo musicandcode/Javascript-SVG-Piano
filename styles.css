@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#piano {
+    clip-path: inset(15px 0px 0px 0px);
+    margin-top: -15px;
+}
+
+.white-key {
+    stroke: #555555;
+    fill: #FFFFF7;
+}
+.black-key {
+    stroke: #979797;
+    fill: #4b4b4b;
+}
+.white-key-text {
+    font-size: 1.3em;
+    pointer-events: none;
+    user-select: none;
+}
+.black-key-text {
+    font-size: 1em;
+    fill: #fff;
+    font-weight: 200;
+    pointer-events: none;
+    user-select: none;
+}
+.show {
+    fill: #f5f541;
+}
+
+.show.black-key ~ text {
+    fill: #000;
+}
